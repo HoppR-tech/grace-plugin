@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" copilot UserPromptSubmit",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^grace-grace_resolve_context$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" copilot PreToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

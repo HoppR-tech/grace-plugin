@@ -1,0 +1,12 @@
+{
+  "name": "grace-native",
+  "owner": {
+    "name": "Grace"
+  },
+  "plugins": [
+    {
+      "name": "grace",
+      "source": "./claude/plugin"
+    }
+  ]
+}

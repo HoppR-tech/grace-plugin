@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" codex UserPromptSubmit",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__grace__grace_resolve_context$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" codex PreToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

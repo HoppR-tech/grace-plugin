@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "grace": {
+      "url": "https://grace-mcp.hoppr.tech/mcp"
+    }
+  }
+}
