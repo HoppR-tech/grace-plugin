@@ -1,12 +1,17 @@
 {
   "kind": "github-actions-build-provenance",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "localOnly": false,
-  "version": "5.9.0-preview.45783353333.1.g4ddc2e3638ae.sd0c86bf72f1b18bc",
+  "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
   "baseVersion": "5.9.0",
-  "builtAt": "2026-11-26T08:28:47.359Z",
-  "platform": "darwin",
-  "architecture": "arm64",
+  "builtAt": "2026-11-26T14:25:36.151Z",
+  "targets": [
+    "darwin-arm64",
+    "darwin-x64",
+    "linux-x64",
+    "linux-arm64",
+    "win32-x64"
+  ],
   "clients": [
     "codex",
     "claude",
@@ -15,153 +20,44 @@
   "source": {
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "commit": "4ddc2e3638ae6807b8802a24a938ceee39770c48",
+    "commit": "7c3df4279a80dbbf06e72fc7d847bdcacec9885a",
     "dirty": false,
-    "digest": "sha256:d0c86bf72f1b18bcb88f5a6f65740623e12cd6ad30171be4f7ca5803500bd55f",
+    "digest": "sha256:286f494d7a317e123e953ca4d8d016d0ec1994a578581bdae96b687d62b992c0",
     "inputs": [
       {
-        "path": "node_modules/zod/index.js",
-        "sha256": "32e7efd49a94a765f6d10a1a0a3c02c50c246def17c80c6f0225f85525d98505",
-        "bytes": 422,
-        "bytesInOutput": 0
+        "path": "grace-context/contract_test.go",
+        "sha256": "4554cb678e34c0f435c02ae0b2d960f62dfd1ecbbb58a06b1aab68013c510080",
+        "bytes": 2070
       },
       {
-        "path": "node_modules/zod/v4/classic/checks.js",
-        "sha256": "7543391a9ad5e7df287bbfecaa79844d46af44c75c1de0d43a411d65795d9dd1",
-        "bytes": 690,
-        "bytesInOutput": 0
+        "path": "grace-context/contract.go",
+        "sha256": "9e1a3a48de01f803785461b0172c84c0803a09e64fb9a0167bbbf9771bbfd604",
+        "bytes": 4550
       },
       {
-        "path": "node_modules/zod/v4/classic/errors.js",
-        "sha256": "d32f7c1ef8e2c70072f6f0ec8ba7081bbc331353cc3a7cb4429e5ece91409543",
-        "bytes": 2532,
-        "bytesInOutput": 1490
+        "path": "grace-context/detector.go",
+        "sha256": "6a2e733a434c4f4736ac17e8ae819d03ffcc9396ad717dd4691a3b360af4f50f",
+        "bytes": 5597
       },
       {
-        "path": "node_modules/zod/v4/classic/parse.js",
-        "sha256": "11941573401bbef138842c7a523dff554873343fccbf0e8b0a144259d2d703f1",
-        "bytes": 1057,
-        "bytesInOutput": 725
+        "path": "grace-context/go.mod",
+        "sha256": "58b76df152d320adb0b3c3f585cef490576be8366d9b9b12f6f37f8d282ca3f4",
+        "bytes": 80
       },
       {
-        "path": "node_modules/zod/v4/classic/schemas.js",
-        "sha256": "2bf4a631a18f734a9a7ab7fc11bcf919214774d2235a312dcec0dd53d0324c32",
-        "bytes": 53354,
-        "bytesInOutput": 22826
+        "path": "grace-context/hook.go",
+        "sha256": "e28db913510d4b5d9e3d3bac65d93c2dc3be020afb3780758d835331e0871cc7",
+        "bytes": 4502
       },
       {
-        "path": "node_modules/zod/v4/core/api.js",
-        "sha256": "03ae6016abc9585e3f3481d6b8d775a95ae4ee65badbde73ca1ed953ff14c0e7",
-        "bytes": 28953,
-        "bytesInOutput": 8273
+        "path": "grace-context/main.go",
+        "sha256": "6d863d24cde6390d846685457ad12980958f9528f8eb7a2f6eed5ffaa7da8935",
+        "bytes": 1996
       },
       {
-        "path": "node_modules/zod/v4/core/checks.js",
-        "sha256": "bc42543274218aa7ef72192b3218d2a4a399e53df8de240a04d9ff275096f563",
-        "bytes": 19491,
-        "bytesInOutput": 5924
-      },
-      {
-        "path": "node_modules/zod/v4/core/core.js",
-        "sha256": "c7ce485c97263e42568d16b11bb4a90133221c7e807498a9273d70f41ba16ef6",
-        "bytes": 6642,
-        "bytesInOutput": 3156
-      },
-      {
-        "path": "node_modules/zod/v4/core/doc.js",
-        "sha256": "be4c1b1a1ad247cc70f360a572060edd7e0cea24252c3a319f33d247899c5643",
-        "bytes": 1290,
-        "bytesInOutput": 1026
-      },
-      {
-        "path": "node_modules/zod/v4/core/errors.js",
-        "sha256": "a0c95ef2f7085b5bc2931f7b566f524b26a0360c8df741e3f87f923745cf9792",
-        "bytes": 10871,
-        "bytesInOutput": 3743
-      },
-      {
-        "path": "node_modules/zod/v4/core/index.js",
-        "sha256": "2a0e452323aa5b75b7d7de4879289e2579b9dd2d6af291c0416ba6806ca2199d",
-        "bytes": 690,
-        "bytesInOutput": 0
-      },
-      {
-        "path": "node_modules/zod/v4/core/json-schema-processors.js",
-        "sha256": "b6d2aee72212c076b9cde38da6333591c76a24eb049a4ee4e7bd2b7825d8b817",
-        "bytes": 34985,
-        "bytesInOutput": 12516
-      },
-      {
-        "path": "node_modules/zod/v4/core/memoizer.js",
-        "sha256": "18a3188c51229d9189a5408b0b7fbc3e121b55c2b4c3c406d79cb9b77e7ad964",
-        "bytes": 12517,
-        "bytesInOutput": 7138
-      },
-      {
-        "path": "node_modules/zod/v4/core/parse.js",
-        "sha256": "fb05b91ec260f3f484f7c00a177b6126ceb8fd1b09dc90b1200afdffd4d98efd",
-        "bytes": 8267,
-        "bytesInOutput": 5214
-      },
-      {
-        "path": "node_modules/zod/v4/core/regexes.js",
-        "sha256": "24fc98f6fc9175e50ff29d28b040e3b4ac5650de19914d45ee27b853d367ecc6",
-        "bytes": 11818,
-        "bytesInOutput": 3747
-      },
-      {
-        "path": "node_modules/zod/v4/core/registries.js",
-        "sha256": "f04d4b2c0bc5b4ac2d6610ea34edf2e5260eade18f20976b79916dcdbeb9fa4d",
-        "bytes": 1540,
-        "bytesInOutput": 1141
-      },
-      {
-        "path": "node_modules/zod/v4/core/schemas.js",
-        "sha256": "0ee56e8afbae28eeb1060a162ad7e56f0675ee6fb83f0ae56bea2e088f6cdbc0",
-        "bytes": 107291,
-        "bytesInOutput": 43918
-      },
-      {
-        "path": "node_modules/zod/v4/core/to-json-schema.js",
-        "sha256": "85b883eb8f05e9f060c71a39fce7df9345b566af29d5bc9c8fa477fe616a051d",
-        "bytes": 29029,
-        "bytesInOutput": 17228
-      },
-      {
-        "path": "node_modules/zod/v4/core/util.js",
-        "sha256": "bb08133b11b478c8e715038fff26ebea204d7fd5443fba31fe138b142d202efb",
-        "bytes": 34840,
-        "bytesInOutput": 16316
-      },
-      {
-        "path": "node_modules/zod/v4/core/versions.js",
-        "sha256": "28439030e50c35b90e1f88726297a346f5285e32e24da7ea4ce15618661d9ac1",
-        "bytes": 70,
-        "bytesInOutput": 54
-      },
-      {
-        "path": "node_modules/zod/v4/locales/en.js",
-        "sha256": "d5930e10d137b048b37823e168e4177947e1f696ada8419c71bb0d32da4333c0",
-        "bytes": 5302,
-        "bytesInOutput": 4347
-      },
-      {
-        "path": "src/context/contract.mts",
-        "sha256": "3bff6d82b29a7e71b4cd90f47dd7eae0b4a0cb03ea395b1afcea6378f5d74206",
-        "bytes": 2238,
-        "bytesInOutput": 1871
-      },
-      {
-        "path": "src/context/detector.mts",
-        "sha256": "a71730dd9554f24b52896c91cec23694ed4ba2d9591de957565862ff1e3eef32",
-        "bytes": 3088,
-        "bytesInOutput": 2622
-      },
-      {
-        "path": "src/context/hook.mts",
-        "sha256": "52887e88b614eb17ee280e0e40dda03513cd70df44c7b7d28149bc2f88210c7c",
-        "bytes": 8643,
-        "bytesInOutput": 7822
+        "path": "grace-context/prompt.go",
+        "sha256": "bf2316dc4a5a6d6bd545cb76a77755a1404d76c99d03fd09762f0452d4f591b1",
+        "bytes": 4887
       }
     ],
     "buildFiles": [
@@ -187,8 +83,8 @@
       },
       {
         "path": "platform/kit-client/src/context/plugin.mts",
-        "sha256": "ae2cd684400cd639854e257c3ed7b9493665f1196708dcce2a07aee638cb9e41",
-        "bytes": 8378
+        "sha256": "bc7a99a47fa57f88266233cef3578ad2d13d49b5d6e46d960bc2cdbfa0939035",
+        "bytes": 10527
       },
       {
         "path": "platform/kit-client/src/context/package-output.py",
@@ -197,23 +93,23 @@
       },
       {
         "path": "platform/kit-client/scripts/package-native-plugin.mjs",
-        "sha256": "bb327da803354cd4fd320d9f96ae6bedf381e289b706414df37de8a1c4502824",
-        "bytes": 20378
+        "sha256": "37fc8915ae549a63ac5d500ce5319c94fb8eb3263d9c896e8935488ff50f7691",
+        "bytes": 17216
       },
       {
         "path": "platform/kit-client/distribution/README.md",
-        "sha256": "68bc3376b9c9f592da05d2e410c52c10f25499656420ad7565fb0ecd265391b3",
-        "bytes": 7272
+        "sha256": "a1eb849d3c88818fe588b4f43e67cebf3867e30bc6d1243eda1e434b643ea301",
+        "bytes": 7884
       },
       {
         "path": "platform/kit-client/distribution/LICENSE.md",
-        "sha256": "9192ddb76630689e2ce472284c007a4fcb23edd8ed1db90e6fdcda65992e5019",
-        "bytes": 2524
+        "sha256": "774687aaa097cc45b0fb843dfbcb784262ac3d4cebdda17b46bae5e5399807e8",
+        "bytes": 2386
       },
       {
         "path": "platform/kit-client/distribution/THIRD_PARTY_NOTICES.md",
-        "sha256": "807f9f142570823782e65a3ffd9c58a81731f92e4b98b7eb185c719071ff55fc",
-        "bytes": 16792
+        "sha256": "28e86cdba7ff214aad4b630fa190660b987d360532afbb1126d4b1abf964d87d",
+        "bytes": 1791
       }
     ]
   },
@@ -221,15 +117,14 @@
     "provider": "github-actions",
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "runId": "45783353333",
+    "runId": "45838375582",
     "runAttempt": "1",
-    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45783353333/attempts/1"
+    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45838375582/attempts/1"
   },
   "builder": {
-    "compiler": "bun",
-    "version": "1.4.5",
-    "compilerSha256": "e2984124f1514e1e6bbda20adedbf07a02c443c6a5828853a15c7c7abf78e19f",
-    "runtimeSha256": "e2984124f1514e1e6bbda20adedbf07a02c443c6a5828853a15c7c7abf78e19f",
+    "compiler": "go",
+    "version": "1.27.4",
+    "compilerSha256": "de0ae3e082ce7599eae4fb69fa2ef1e43b8f31ffd3fce62cdf81930aa9005050",
     "versionTool": "git-cliff 2.13.1",
     "offlineVersionDerivation": true,
     "parameters": {
@@ -239,53 +134,147 @@
         "claude",
         "copilot"
       ],
-      "platform": "darwin",
-      "architecture": "arm64"
+      "targets": [
+        "darwin-arm64",
+        "darwin-x64",
+        "linux-x64",
+        "linux-arm64",
+        "win32-x64"
+      ]
     },
+    "flags": [
+      "-trimpath",
+      "-buildvcs=false",
+      "-ldflags=-s -w -buildid="
+    ],
     "isolation": {
       "temporaryHome": true,
       "environmentAllowlist": [
+        "CGO_ENABLED",
         "GIT_CONFIG_GLOBAL",
         "GIT_CONFIG_NOSYSTEM",
         "GIT_TERMINAL_PROMPT",
+        "GOAMD64",
+        "GOARM64",
+        "GOCACHE",
+        "GOENV",
+        "GOFLAGS",
+        "GOPATH",
+        "GOPROXY",
+        "GOTOOLCHAIN",
         "HOME",
         "LANG",
         "PATH",
         "TMPDIR"
       ],
-      "dotenvAtBuild": false,
-      "envInlining": false,
-      "runtimeConfigAutoload": false,
+      "cgo": false,
+      "moduleProxy": false,
       "filesystemSandbox": false,
       "networkSandbox": false
     }
   },
   "subjects": [
     {
-      "path": "codex/plugin/bin/grace-context",
-      "sha256": "0f62c20cb36f6f77cc472962ead98a4f3702d66034b5def467f986ed2914df28",
-      "bytes": 89343344
+      "path": "codex/plugin/bin/grace-context-darwin-arm64",
+      "target": "darwin-arm64",
+      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "bytes": 3039634
     },
     {
-      "path": "claude/plugin/bin/grace-context",
-      "sha256": "0f62c20cb36f6f77cc472962ead98a4f3702d66034b5def467f986ed2914df28",
-      "bytes": 89343344
+      "path": "codex/plugin/bin/grace-context-darwin-x64",
+      "target": "darwin-x64",
+      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "bytes": 3204400
     },
     {
-      "path": "copilot/plugin/bin/grace-context",
-      "sha256": "0f62c20cb36f6f77cc472962ead98a4f3702d66034b5def467f986ed2914df28",
-      "bytes": 89343344
+      "path": "codex/plugin/bin/grace-context-linux-x64",
+      "target": "linux-x64",
+      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "bytes": 3215484
+    },
+    {
+      "path": "codex/plugin/bin/grace-context-linux-arm64",
+      "target": "linux-arm64",
+      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "bytes": 3080316
+    },
+    {
+      "path": "codex/plugin/bin/grace-context.exe",
+      "target": "win32-x64",
+      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "bytes": 3339264
+    },
+    {
+      "path": "claude/plugin/bin/grace-context-darwin-arm64",
+      "target": "darwin-arm64",
+      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "bytes": 3039634
+    },
+    {
+      "path": "claude/plugin/bin/grace-context-darwin-x64",
+      "target": "darwin-x64",
+      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "bytes": 3204400
+    },
+    {
+      "path": "claude/plugin/bin/grace-context-linux-x64",
+      "target": "linux-x64",
+      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "bytes": 3215484
+    },
+    {
+      "path": "claude/plugin/bin/grace-context-linux-arm64",
+      "target": "linux-arm64",
+      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "bytes": 3080316
+    },
+    {
+      "path": "claude/plugin/bin/grace-context.exe",
+      "target": "win32-x64",
+      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "bytes": 3339264
+    },
+    {
+      "path": "copilot/plugin/bin/grace-context-darwin-arm64",
+      "target": "darwin-arm64",
+      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "bytes": 3039634
+    },
+    {
+      "path": "copilot/plugin/bin/grace-context-darwin-x64",
+      "target": "darwin-x64",
+      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "bytes": 3204400
+    },
+    {
+      "path": "copilot/plugin/bin/grace-context-linux-x64",
+      "target": "linux-x64",
+      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "bytes": 3215484
+    },
+    {
+      "path": "copilot/plugin/bin/grace-context-linux-arm64",
+      "target": "linux-arm64",
+      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "bytes": 3080316
+    },
+    {
+      "path": "copilot/plugin/bin/grace-context.exe",
+      "target": "win32-x64",
+      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "bytes": 3339264
     }
   ],
   "signature": {
-    "adHocVerified": true,
+    "adHocVerified": false,
     "developerId": false,
     "notarized": false,
-    "identityVerified": false
+    "identityVerified": false,
+    "authenticode": false
   },
   "limitations": [
     "GitHub Actions preview build observation, not a cryptographic attestation or signed release.",
-    "The verified ad-hoc Mach-O signature checks integrity, not publisher identity.",
+    "Only darwin-arm64 carries an ad-hoc Mach-O signature, which checks integrity, not publisher identity; the other executables are unsigned.",
     "Input hashes are local build observations, not a hermetic or hostile-concurrency attestation.",
     "SHA-256 proves file integrity only when compared with an independently trusted digest."
   ]

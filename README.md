@@ -2,16 +2,16 @@
 
 Ce dépôt distribue le plugin Grace. Le catalogue s’appelle `grace-native`, le plugin `grace`. Il connecte votre outil à Grace avec votre compte et reconnaît le projet à partir du dépôt Git dans lequel vous travaillez.
 
-**Préversion pour macOS Apple Silicon (arm64).** La signature ad hoc contrôle l’intégrité du binaire. Elle ne prouve pas l’identité de l’éditeur : il n’y a ni Developer ID ni notarisation. Linux, Windows, Copilot dans VS Code et OMP ne sont pas pris en charge par ce paquet.
+**Préversion pour macOS (Apple Silicon et Intel), Linux (x64 et arm64) et Windows (x64).** Chaque plugin contient un petit exécutable par système ; le bon est choisi automatiquement. Sur macOS Apple Silicon, une signature ad hoc contrôle l’intégrité de l’exécutable ; les autres ne sont pas signés. Aucun ne prouve l’identité de l’éditeur : il n’y a ni Developer ID, ni notarisation, ni Authenticode. Copilot dans VS Code et OMP ne sont pas pris en charge.
 
-Le binaire embarqué ne nécessite ni Node, ni Bun, ni Python. Git et un client compatible restent nécessaires. Ne désactivez pas les protections de votre système ou de votre client pour l’installer.
+Les exécutables ne nécessitent ni Node ni Python. Git (Git for Windows sous Windows) et un client compatible restent nécessaires. Sous Windows, Claude Code lance le plugin avec Git Bash, fourni par Git for Windows ; s’il ne le trouve pas, indiquez son chemin dans `CLAUDE_CODE_GIT_BASH_PATH`. Ne désactivez pas les protections de votre système ou de votre client pour l’installer.
 
-Le téléchargement contient les variantes des trois outils, soit environ 270 Mo une fois extrait.
+Le téléchargement contient les variantes des trois outils, soit environ 50 Mo une fois extrait.
 
 ## Avant l’installation
 
 - Disposer d’un compte Grace membre d’une organisation approuvée. Le dépôt est public, l’accès à Grace ne l’est pas.
-- Utiliser macOS arm64 et une version récente de votre client. Le parcours a été exécuté le 25 novembre 2026 avec Codex 0.172.0, Claude Code 2.1.331 et Copilot CLI 1.0.83, avec un paquet candidat embarquant Bun 1.4.5, contre l’environnement de préproduction. Une autre version peut se comporter autrement.
+- Utiliser un système pris en charge et une version récente de votre client. Le parcours complet a été exécuté le 25 novembre 2026 sur macOS arm64 avec Codex 0.172.0, Claude Code 2.1.331 et Copilot CLI 1.0.83, contre l’environnement de préproduction. Les essais de l’exécutable actuel sont détaillés dans le guide Grace. Une autre version peut se comporter autrement.
 - Si Grace est déjà configuré à la main, sauvegardez vos réglages puis désactivez seulement cette ancienne entrée Grace avant d’activer le plugin. Sinon, elle peut masquer le plugin ou l’emporter sur lui. Ne supprimez pas vos autres MCP, instructions ou identifiants.
 
 Vérifiez l’accès Git, sans placer de token dans l’URL :
@@ -78,7 +78,7 @@ copilot plugin marketplace update grace-native
 copilot plugin update grace@grace-native
 ```
 
-Redémarrez le client, vérifiez la version affichée et refaites le contrôle du projet. Si le contenu des hooks change, leur approbation peut devoir être renouvelée. Une erreur de mise à jour ne doit pas être assimilée au maintien garanti d’un plugin actif ; vérifiez l’inventaire du client avant de reprendre.
+Redémarrez le client, vérifiez la version affichée et refaites le contrôle du projet. Si le contenu des hooks change, leur approbation doit être renouvelée. Codex le demande en session interactive ; en mode non interactif (`codex exec`), il ignore sans le signaler un hook non approuvé, et le plugin ne déclare alors plus le dépôt. Une erreur de mise à jour ne doit pas être assimilée au maintien garanti d’un plugin actif ; vérifiez l’inventaire du client avant de reprendre.
 
 Une installation qui suit `main` peut recevoir la nouvelle préversion. **Un tag ou commit épinglé reste volontairement figé** : il faut changer explicitement cette référence pour avancer. Les tags existants ne sont jamais déplacés.
 

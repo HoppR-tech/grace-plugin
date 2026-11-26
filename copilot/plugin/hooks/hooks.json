@@ -6,6 +6,7 @@
           {
             "type": "command",
             "command": "\"$PLUGIN_ROOT/bin/grace-context\" copilot UserPromptSubmit",
+            "powershell": "& \"$env:PLUGIN_ROOT/bin/grace-context.exe\" copilot UserPromptSubmit; exit $LASTEXITCODE",
             "timeout": 10
           }
         ]
@@ -18,6 +19,7 @@
           {
             "type": "command",
             "command": "\"$PLUGIN_ROOT/bin/grace-context\" copilot PreToolUse",
+            "powershell": "& \"$env:PLUGIN_ROOT/bin/grace-context.exe\" copilot PreToolUse; exit $LASTEXITCODE",
             "timeout": 10
           }
         ]
