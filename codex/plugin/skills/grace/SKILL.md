@@ -52,5 +52,10 @@ If Grace refuses `originUrl` as invalid (for example an `http://` or local origi
 - Then follow the Grace server instructions: prepare the task with `grace_prepare_task` before
   writing code, apply the conventions it returns, and review the change with `grace_review` before
   you finish.
+- This plugin already bundles the Grace kit: the `grace-review`, `grace-discover-codebase` and
+  `grace-effort` skills. Use them; do not install or update those skills or the Grace instructions
+  block in the project, the plugin update replaces them. Local `grace-review-*` agent profiles stay
+  managed by the local kit. Without the bundled review client, `grace-review` follows its manual
+  procedure.
 - If a Grace tool is unavailable or refuses access, say so; do not invent projects, talents or a
   successful review.

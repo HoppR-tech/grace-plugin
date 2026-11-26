@@ -1,7 +1,7 @@
 {
   "name": "hoppr-grace",
   "author": {
-    "name": "HoppR",
+    "name": "HoppR Tech",
     "email": "contact-grace@hoppr.tech",
     "url": "https://hoppr.tech"
   },
@@ -19,15 +19,15 @@
     "talents",
     "mcp"
   ],
-  "version": "5.9.0-preview.45873987989.1.g6052ffbe2af4.se466c80651fb74f6",
+  "version": "5.9.0-preview.45909548091.1.gd316c4022356.s6ff8bb616dc9892c",
   "description": "Grace project talents through native OAuth and local repository context.",
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
   "interface": {
-    "displayName": "Grace",
+    "displayName": "HoppR Grace",
     "shortDescription": "Your team's architecture and code conventions, applied and reviewed by the agent.",
     "longDescription": "Grace serves the conventions (\"talents\") chosen for your project to the coding agent before it writes code, then reviews the change against those same rules and records the verdicts in your Grace project.",
-    "developerName": "HoppR",
+    "developerName": "HoppR Tech",
     "category": "Developer Tools",
     "capabilities": [
       "Read",

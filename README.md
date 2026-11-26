@@ -10,6 +10,7 @@ Git et un client compatible sont nécessaires. Copilot dans VS Code et OMP ne so
 
 - Disposer d’un compte Grace membre d’une organisation approuvée. Le dépôt est public, l’accès à Grace ne l’est pas.
 - N’installez pas à la fois `hoppr-grace@grace-native` et `hoppr-grace@grace-lite` dans le même client : choisissez une variante.
+- Le plugin fournit lui-même les skills Grace (`grace-review`, `grace-discover-codebase`, `grace-effort`). Si un projet contient encore les dossiers `grace-review`, `grace-discover-codebase` et `grace-effort` installés à la main pour ce client (`.claude/skills/`, `.agents/skills/` ou `.github/skills/`), supprimez-les pour éviter des doublons qui ne seraient plus mis à jour, sauf si un autre outil non couvert par le plugin (Cursor, Copilot dans VS Code…) les utilise dans le même dépôt. Gardez les profils d’agents `grace-review-*` : ce sont eux qui limitent les relecteurs à la lecture.
 - Si Grace est déjà configuré à la main, sauvegardez vos réglages puis désactivez seulement cette ancienne entrée Grace avant d’activer le plugin.
 
 ## Installer
