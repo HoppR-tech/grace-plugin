@@ -3,16 +3,16 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-25T09:11:35.663Z",
+    "timestamp": "2026-11-26T08:28:47.359Z",
     "component": {
       "type": "application",
       "bom-ref": "grace-context",
       "name": "grace-context",
-      "version": "5.9.0-preview.45582791441.1.g0b78041b6dd8.sfde5bf8c25dcea62",
+      "version": "5.9.0-preview.45783353333.1.g4ddc2e3638ae.sd0c86bf72f1b18bc",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "735843aebb968939ee42b9a8bed6c30d603714c634d1899056d1b026d3ece7ea"
+          "content": "0f62c20cb36f6f77cc472962ead98a4f3702d66034b5def467f986ed2914df28"
         }
       ]
     }
@@ -35,11 +35,11 @@
       "type": "application",
       "bom-ref": "bun-runtime",
       "name": "bun",
-      "version": "1.3.11",
+      "version": "1.4.5",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "1d77af7bfd811aebb7d37bec496a5eed14fe227ded3ab7866d2f39786e8107b6"
+          "content": "e2984124f1514e1e6bbda20adedbf07a02c443c6a5828853a15c7c7abf78e19f"
         }
       ],
       "description": "Hash of the installed Bun executable supplied to --compile-executable-path; native runtime internals are not inventoried by the JS metafile."
