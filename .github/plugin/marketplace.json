@@ -1,0 +1,14 @@
+{
+  "name": "grace-lite",
+  "owner": {
+    "name": "HoppR",
+    "email": "contact-grace@hoppr.tech"
+  },
+  "description": "Grace plugin by HoppR.",
+  "plugins": [
+    {
+      "name": "hoppr-grace",
+      "source": "./copilot/plugin"
+    }
+  ]
+}

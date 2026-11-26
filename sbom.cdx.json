@@ -1,0 +1,22 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-26T18:14:18.557Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "hoppr-grace",
+      "name": "hoppr-grace",
+      "version": "5.9.0-preview.45873987989.1.g6052ffbe2af4.se466c80651fb74f6"
+    }
+  },
+  "components": [],
+  "dependencies": [],
+  "properties": [
+    {
+      "name": "grace:scope",
+      "value": "GitHub Actions preview build. Lite variant: manifests, a skill and an icon; no executable or dependency."
+    }
+  ]
+}

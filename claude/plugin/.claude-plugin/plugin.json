@@ -1,0 +1,29 @@
+{
+  "name": "hoppr-grace",
+  "author": {
+    "name": "HoppR",
+    "email": "contact-grace@hoppr.tech",
+    "url": "https://hoppr.tech"
+  },
+  "homepage": "https://grace.hoppr.tech",
+  "repository": "https://github.com/HoppR-tech/grace-plugin",
+  "license": "LicenseRef-HoppR-Proprietary",
+  "keywords": [
+    "grace",
+    "hoppr",
+    "architecture",
+    "conventions",
+    "code-review",
+    "ddd",
+    "clean-architecture",
+    "talents",
+    "mcp"
+  ],
+  "version": "5.9.0-preview.45873987989.1.g6052ffbe2af4.se466c80651fb74f6",
+  "description": "Grace project talents through native OAuth and local repository context.",
+  "displayName": "Grace",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://grace.hoppr.tech/privacy",
+  "termsOfServiceUrl": "https://grace.hoppr.tech/terms",
+  "documentationUrl": "https://docs.grace.hoppr.tech"
+}
