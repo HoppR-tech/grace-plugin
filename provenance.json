@@ -2,9 +2,9 @@
   "kind": "github-actions-build-provenance",
   "schemaVersion": 2,
   "localOnly": false,
-  "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+  "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
   "baseVersion": "5.9.0",
-  "builtAt": "2026-11-27T10:11:04.114Z",
+  "builtAt": "2026-11-27T10:42:21.543Z",
   "variant": "native",
   "targets": [
     "darwin-arm64",
@@ -66,20 +66,26 @@
         {
           "path": "agents/grace-review-high.md",
           "source": ".claude/agents/grace-review-high.md",
-          "sha256": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3",
-          "bytes": 2408
+          "sha256": "a0df57fab69d27c9c59c38c0ee01f745231cc59b61065ef6d3b0634f368f61ee",
+          "bytes": 2351,
+          "sourceSha256": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3",
+          "sourceBytes": 2408
         },
         {
           "path": "agents/grace-review-low.md",
           "source": ".claude/agents/grace-review-low.md",
-          "sha256": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813",
-          "bytes": 2407
+          "sha256": "739dbbcbb621360b13fed640c917258bb3f7859ba68ec1040fd7a231ecc1452d",
+          "bytes": 2350,
+          "sourceSha256": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813",
+          "sourceBytes": 2407
         },
         {
           "path": "agents/grace-review-medium.md",
           "source": ".claude/agents/grace-review-medium.md",
-          "sha256": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268",
-          "bytes": 2410
+          "sha256": "54f68cb17ec106a5bcb729fe8cd98c078ada29650502a99dda8f3217f7cacf11",
+          "bytes": 2353,
+          "sourceSha256": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268",
+          "sourceBytes": 2410
         },
         {
           "path": "skills/grace-discover-codebase/SKILL.md",
@@ -155,9 +161,9 @@
   "source": {
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "commit": "b88ba4bcd77640782e5d2214babf80ce50a56a37",
+    "commit": "2307cf29d6fd7dc23bf140d4bc1d4b18de2f775b",
     "dirty": false,
-    "digest": "sha256:fd7f6ab970817a640f70e0a381a149b268646264789e2fe0ee1dc084e6f1424f",
+    "digest": "sha256:adb6657d65c9096f7140e47b85b7444e9a4ada1647ebf0c91eee61de3153ab40",
     "inputs": [
       {
         "path": "grace-context/contract_test.go",
@@ -238,8 +244,8 @@
       },
       {
         "path": "platform/kit-client/scripts/package-native-plugin.mjs",
-        "sha256": "34d7965196e7dfbe8fd871cb8dfb077176817e64cf861506c554c27f42eedaf1",
-        "bytes": 23806
+        "sha256": "877b33c11ace1c6de46155f20d29e5cac5d7f23ea5a7f64193dd0a8dea39d593",
+        "bytes": 25746
       },
       {
         "path": "platform/kit-client/distribution/README.md",
@@ -262,9 +268,9 @@
     "provider": "github-actions",
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "runId": "45979517886",
+    "runId": "45983903309",
     "runAttempt": "1",
-    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45979517886/attempts/1"
+    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45983903309/attempts/1"
   },
   "builder": {
     "compiler": "go",

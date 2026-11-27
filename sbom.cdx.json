@@ -3,12 +3,12 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-27T10:11:04.114Z",
+    "timestamp": "2026-11-27T10:42:21.543Z",
     "component": {
       "type": "application",
       "bom-ref": "grace-context",
       "name": "grace-context",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64"
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f"
     }
   },
   "components": [
@@ -30,7 +30,7 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-arm64",
       "name": "grace-context-darwin-arm64",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -48,7 +48,7 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-x64",
       "name": "grace-context-darwin-x64",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -66,7 +66,7 @@
       "type": "application",
       "bom-ref": "grace-context-linux-x64",
       "name": "grace-context-linux-x64",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -84,7 +84,7 @@
       "type": "application",
       "bom-ref": "grace-context-linux-arm64",
       "name": "grace-context-linux-arm64",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -102,7 +102,7 @@
       "type": "application",
       "bom-ref": "grace-context-win32-x64",
       "name": "grace-context.exe",
-      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
+      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -228,7 +228,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3"
+          "content": "a0df57fab69d27c9c59c38c0ee01f745231cc59b61065ef6d3b0634f368f61ee"
         }
       ],
       "properties": [
@@ -249,7 +249,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813"
+          "content": "739dbbcbb621360b13fed640c917258bb3f7859ba68ec1040fd7a231ecc1452d"
         }
       ],
       "properties": [
@@ -270,7 +270,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268"
+          "content": "54f68cb17ec106a5bcb729fe8cd98c078ada29650502a99dda8f3217f7cacf11"
         }
       ],
       "properties": [
