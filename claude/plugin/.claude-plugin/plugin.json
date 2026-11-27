@@ -19,7 +19,7 @@
     "talents",
     "mcp"
   ],
-  "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+  "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
   "description": "Grace project talents through native OAuth and local repository context.",
   "displayName": "HoppR Grace",
   "icon": "./assets/icon.png",

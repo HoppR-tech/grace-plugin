@@ -3,12 +3,12 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-27T10:42:21.543Z",
+    "timestamp": "2026-11-27T13:14:09.284Z",
     "component": {
       "type": "application",
       "bom-ref": "grace-context",
       "name": "grace-context",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f"
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd"
     }
   },
   "components": [
@@ -30,11 +30,11 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-arm64",
       "name": "grace-context-darwin-arm64",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a354b7573488f6114b11e266b65eacf02103105827b053471d6a6251594b84af"
+          "content": "388c934d6d2a6d99a68126626c4c4d604586ce23bbc467bc87e1d8d9d7723081"
         }
       ],
       "properties": [
@@ -48,11 +48,11 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-x64",
       "name": "grace-context-darwin-x64",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a944345692e4fe5b629504e1e21eab7ac73d208c4d662783fdc33c66a59af224"
+          "content": "7efe630656f1c59efb7b324214b3ea0f6ce1eab18248126aa8589c5418b36862"
         }
       ],
       "properties": [
@@ -66,11 +66,11 @@
       "type": "application",
       "bom-ref": "grace-context-linux-x64",
       "name": "grace-context-linux-x64",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "7c48b2e5e62a537428493b88c15bf206c986e4afd0ff719996edf679b759435f"
+          "content": "96391c8a15bb25db2efdbe07253f6c635986fc235b1ece3892cdde7c1d9e8903"
         }
       ],
       "properties": [
@@ -84,11 +84,11 @@
       "type": "application",
       "bom-ref": "grace-context-linux-arm64",
       "name": "grace-context-linux-arm64",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "0cb5333a74b0faef2df68e6a59bca6fef0599a49d32f37da3b7b37e6894b083b"
+          "content": "256a58999a6141bde077193b09db0d8839b2bd7d4d2caa1c210ef90b34a141a3"
         }
       ],
       "properties": [
@@ -102,11 +102,11 @@
       "type": "application",
       "bom-ref": "grace-context-win32-x64",
       "name": "grace-context.exe",
-      "version": "5.9.0-preview.45983903309.1.g2307cf29d6fd.sadb6657d65c9096f",
+      "version": "5.9.0-preview.46004950975.1.g786f291fe9d9.s74a5e6463e4ac5cd",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "2935e3e011f88d625a6ce60eda5e423b4fff51db837f2155fa319a3cdf046d14"
+          "content": "226c2397db84e66ce7386577cc254c83e56b390c5652d8b2ca8d82042c8ac7ea"
         }
       ],
       "properties": [
@@ -223,12 +223,33 @@
     },
     {
       "type": "file",
+      "bom-ref": "grace-kit-codex-instructions.md",
+      "name": "codex/plugin/instructions.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c0456696cc7323f8ba35eaec14e19aada8830eacdccaf154302d2710c5b9bc0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
       "bom-ref": "grace-kit-claude-agents/grace-review-high.md",
       "name": "claude/plugin/agents/grace-review-high.md",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a0df57fab69d27c9c59c38c0ee01f745231cc59b61065ef6d3b0634f368f61ee"
+          "content": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3"
         }
       ],
       "properties": [
@@ -249,7 +270,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "739dbbcbb621360b13fed640c917258bb3f7859ba68ec1040fd7a231ecc1452d"
+          "content": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813"
         }
       ],
       "properties": [
@@ -270,7 +291,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "54f68cb17ec106a5bcb729fe8cd98c078ada29650502a99dda8f3217f7cacf11"
+          "content": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268"
         }
       ],
       "properties": [
@@ -386,6 +407,48 @@
         {
           "name": "grace:kit-bundle",
           "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-instructions.md",
+      "name": "claude/plugin/instructions.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c0456696cc7323f8ba35eaec14e19aada8830eacdccaf154302d2710c5b9bc0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-instructions.md",
+      "name": "copilot/plugin/instructions.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c0456696cc7323f8ba35eaec14e19aada8830eacdccaf154302d2710c5b9bc0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
         }
       ]
     },
@@ -540,7 +603,7 @@
   "properties": [
     {
       "name": "grace:scope",
-      "value": "GitHub Actions preview build. The hook uses the Go standard library only (no module dependency); OS libraries are outside this inventory. The bundled Grace kit (skills, Claude Code review agent profiles and the Python review client run by the user's Python) is listed as files."
+      "value": "GitHub Actions preview build. The hook uses the Go standard library only (no module dependency); OS libraries are outside this inventory. The bundled Grace kit (skills, instructions block, Claude Code review agent profiles and the Python review client run by the user's Python) is listed as files."
     }
   ]
 }

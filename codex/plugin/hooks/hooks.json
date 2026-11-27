@@ -1,5 +1,17 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" codex SessionStart",
+            "commandWindows": "& \"$env:PLUGIN_ROOT/bin/grace-context.exe\" codex SessionStart; exit $LASTEXITCODE",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
     "UserPromptSubmit": [
       {
         "hooks": [

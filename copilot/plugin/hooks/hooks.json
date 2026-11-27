@@ -1,5 +1,17 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/bin/grace-context\" copilot SessionStart",
+            "powershell": "& \"$env:PLUGIN_ROOT/bin/grace-context.exe\" copilot SessionStart; exit $LASTEXITCODE",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
     "UserPromptSubmit": [
       {
         "hooks": [

@@ -12,9 +12,10 @@ Le téléchargement contient les variantes des trois outils, soit environ 50 Mo 
 
 - Disposer d’un compte Grace membre d’une organisation approuvée. Le dépôt est public, l’accès à Grace ne l’est pas.
 - Utiliser un système pris en charge et une version récente de votre client. Le parcours complet a été exécuté le 25 novembre 2026 sur macOS arm64 avec Codex 0.172.0, Claude Code 2.1.331 et Copilot CLI 1.0.83, contre l’environnement de préproduction. Les essais de l’exécutable actuel sont détaillés dans le guide Grace. Une autre version peut se comporter autrement.
-- Le plugin fournit lui-même les quatre skills Grace (`grace-review`, `grace-discover-codebase`, `grace-update`, `grace-effort`) et, pour Claude Code, les profils de relecteurs `grace-review-low`, `grace-review-medium` et `grace-review-high`. Si un projet contient encore ces skills installées pour ce client (`.claude/skills/`, `.agents/skills/` ou `.github/skills/`), ou ces profils dans `.claude/agents/`, supprimez-les : sinon ces copies passent avant celles du plugin et ne sont plus mises à jour. Gardez-les seulement si un autre outil non couvert par le plugin (Cursor, Copilot dans VS Code…) les utilise dans le même dépôt.
-- Le reste du kit est installé dans le projet comme avant, par `grace-update` au premier échange : le bloc d’instructions (`CLAUDE.md`, `AGENTS.md` ou `.github/copilot-instructions.md`) et, pour Codex, les profils `.codex/agents/grace-review-*.toml`. Un plugin ne peut pas les fournir. Gardez-les s’ils sont déjà installés.
-- Claude Code ignore `permissionMode` pour les agents d’un plugin : les profils de relecteurs du plugin ne démarrent pas en mode plan. Ils n’ont toujours ni `Write` ni `Edit`, mais gardent Bash, NotebookEdit et les outils MCP de la session : rien d’autre que leurs consignes ne les empêche de modifier le dépôt ou d’appeler un service.
+- Le plugin remplace le script d’installation par projet. Il fournit lui-même les quatre skills Grace (`grace-review`, `grace-discover-codebase`, `grace-update`, `grace-effort`) avec le client de revue, le bloc d’instructions Grace, ajouté au contexte à chaque démarrage de session au lieu d’être écrit dans `CLAUDE.md`, `AGENTS.md` ou `.github/copilot-instructions.md`, et, pour Claude Code, les profils de relecteurs `grace-review-low`, `grace-review-medium` et `grace-review-high`.
+- Si un projet contient encore ces skills (`.claude/skills/`, `.agents/skills/` ou `.github/skills/`), les profils `.claude/agents/grace-review-*` ou le bloc Grace entre `<!-- grace:begin -->` et `<!-- grace:end -->`, supprimez-les : sinon ces copies passent avant celles du plugin ou les doublent, et ne sont plus mises à jour. Gardez-les seulement si un autre outil non couvert par le plugin (Cursor, Copilot dans VS Code…) les utilise dans le même dépôt.
+- Codex ne charge pas d’agents depuis un plugin : `grace-update` installe toujours les profils `.codex/agents/grace-review-*.toml` dans le projet au premier échange. Gardez-les s’ils sont déjà installés.
+- Claude Code ignore `permissionMode` pour les agents d’un plugin. Le plugin garde donc ses relecteurs en lecture seule par son hook : il leur refuse toute écriture, tout outil MCP et toute commande hors d’une liste de lecture (`git diff`, `git show`, `cat`, `grep`…), sans redirection ni enchaînement.
 - Si Grace est déjà configuré à la main, sauvegardez vos réglages puis désactivez seulement cette ancienne entrée Grace avant d’activer le plugin. Sinon, elle peut masquer le plugin ou l’emporter sur lui. Ne supprimez pas vos autres MCP, instructions ou identifiants.
 
 Vérifiez l’accès Git, sans placer de token dans l’URL :
@@ -58,7 +59,7 @@ Dans un dépôt autorisé, demandez ensuite à l’agent de vérifier le context
 
 ## Mettre à jour
 
-Le plugin s’appelait `grace` avant d’être renommé `hoppr-grace` pour les annuaires publics. Si `grace@grace-native` est encore installé, désinstallez-le (voir « Désinstaller » avec l’ancien nom), actualisez le catalogue puis installez `hoppr-grace@grace-native`.
+Le plugin s’appelait `grace` avant d’être renommé `hoppr-grace`. Si `grace@grace-native` est encore installé, désinstallez-le (voir « Désinstaller » avec l’ancien nom), actualisez le catalogue puis installez `hoppr-grace@grace-native`.
 
 Une nouvelle version publiée ne remplace pas immédiatement une session ouverte. Il faut actualiser le catalogue **puis** le plugin ; les commandes natives sont utilisées, sans updater Grace.
 
