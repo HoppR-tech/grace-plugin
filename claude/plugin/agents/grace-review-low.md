@@ -1,13 +1,8 @@
 ---
-# grace:managed-review-agent
 name: grace-review-low
 description: Reviews a Grace packet. Pins no model or effort; pass both model and effort at launch, or each inherits yours.
-permissionMode: plan
-disallowedTools:
-  - Write
-  - Edit
-skills:
-  - grace-review
+disallowedTools: [Write, Edit]
+skills: [grace-review]
 ---
 Review only the assigned Grace packet. Follow the grace-review skill, use read and verification
  tools only, use the exact criteria and protocol supplied by the coordinator without calling Grace,
