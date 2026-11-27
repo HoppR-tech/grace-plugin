@@ -19,7 +19,7 @@
     "talents",
     "mcp"
   ],
-  "version": "5.9.0-preview.45909548091.1.gd316c4022356.s6ff8bb616dc9892c",
+  "version": "5.9.0-preview.45979104150.1.gb88ba4bcd776.sd6c42c98273f8691",
   "description": "Grace project talents through native OAuth and local repository context.",
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",

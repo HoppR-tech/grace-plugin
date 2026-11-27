@@ -3,12 +3,12 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-26T23:14:08.173Z",
+    "timestamp": "2026-11-27T10:07:28.558Z",
     "component": {
       "type": "application",
       "bom-ref": "hoppr-grace",
       "name": "hoppr-grace",
-      "version": "5.9.0-preview.45909548091.1.gd316c4022356.s6ff8bb616dc9892c"
+      "version": "5.9.0-preview.45979104150.1.gb88ba4bcd776.sd6c42c98273f8691"
     }
   },
   "components": [
@@ -77,6 +77,90 @@
     },
     {
       "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-update/SKILL.md",
+      "name": "codex/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-high.md",
+      "name": "claude/plugin/agents/grace-review-high.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-low.md",
+      "name": "claude/plugin/agents/grace-review-low.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-medium.md",
+      "name": "claude/plugin/agents/grace-review-medium.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
       "bom-ref": "grace-kit-claude-skills/grace-discover-codebase/SKILL.md",
       "name": "claude/plugin/skills/grace-discover-codebase/SKILL.md",
       "hashes": [
@@ -125,6 +209,27 @@
         {
           "alg": "SHA-256",
           "content": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-update/SKILL.md",
+      "name": "claude/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
         }
       ],
       "properties": [
@@ -200,13 +305,34 @@
           "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
         }
       ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-update/SKILL.md",
+      "name": "copilot/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
+        }
+      ]
     }
   ],
   "dependencies": [],
   "properties": [
     {
       "name": "grace:scope",
-      "value": "GitHub Actions preview build. Lite variant: manifests, the grace skill, the bundled Grace kit skills and an icon; no executable or dependency."
+      "value": "GitHub Actions preview build. Lite variant: manifests, the grace skill, the bundled Grace kit skills and Claude Code review agent profiles, and an icon; no executable or dependency."
     }
   ]
 }
