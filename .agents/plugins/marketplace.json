@@ -2,7 +2,7 @@
   "name": "grace-native",
   "plugins": [
     {
-      "name": "grace",
+      "name": "hoppr-grace",
       "source": {
         "source": "local",
         "path": "./codex/plugin"

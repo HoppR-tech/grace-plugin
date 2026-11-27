@@ -1,6 +1,6 @@
 # Grace — plugin natif pour Codex, Claude Code et GitHub Copilot CLI
 
-Ce dépôt distribue le plugin Grace. Le catalogue s’appelle `grace-native`, le plugin `grace`. Il connecte votre outil à Grace avec votre compte et reconnaît le projet à partir du dépôt Git dans lequel vous travaillez.
+Ce dépôt distribue le plugin Grace. Le catalogue s’appelle `grace-native`, le plugin `hoppr-grace`. Il connecte votre outil à Grace avec votre compte et reconnaît le projet à partir du dépôt Git dans lequel vous travaillez.
 
 **Préversion pour macOS (Apple Silicon et Intel), Linux (x64 et arm64) et Windows (x64).** Chaque plugin contient un petit exécutable par système ; le bon est choisi automatiquement. Sur macOS Apple Silicon, une signature ad hoc contrôle l’intégrité de l’exécutable ; les autres ne sont pas signés. Aucun ne prouve l’identité de l’éditeur : il n’y a ni Developer ID, ni notarisation, ni Authenticode. Copilot dans VS Code et OMP ne sont pas pris en charge.
 
@@ -12,6 +12,9 @@ Le téléchargement contient les variantes des trois outils, soit environ 50 Mo 
 
 - Disposer d’un compte Grace membre d’une organisation approuvée. Le dépôt est public, l’accès à Grace ne l’est pas.
 - Utiliser un système pris en charge et une version récente de votre client. Le parcours complet a été exécuté le 25 novembre 2026 sur macOS arm64 avec Codex 0.172.0, Claude Code 2.1.331 et Copilot CLI 1.0.83, contre l’environnement de préproduction. Les essais de l’exécutable actuel sont détaillés dans le guide Grace. Une autre version peut se comporter autrement.
+- Le plugin fournit lui-même les quatre skills Grace (`grace-review`, `grace-discover-codebase`, `grace-update`, `grace-effort`) et, pour Claude Code, les profils de relecteurs `grace-review-low`, `grace-review-medium` et `grace-review-high`. Si un projet contient encore ces skills installées pour ce client (`.claude/skills/`, `.agents/skills/` ou `.github/skills/`), ou ces profils dans `.claude/agents/`, supprimez-les : sinon ces copies passent avant celles du plugin et ne sont plus mises à jour. Gardez-les seulement si un autre outil non couvert par le plugin (Cursor, Copilot dans VS Code…) les utilise dans le même dépôt.
+- Le reste du kit est installé dans le projet comme avant, par `grace-update` au premier échange : le bloc d’instructions (`CLAUDE.md`, `AGENTS.md` ou `.github/copilot-instructions.md`) et, pour Codex, les profils `.codex/agents/grace-review-*.toml`. Un plugin ne peut pas les fournir. Gardez-les s’ils sont déjà installés.
+- Claude Code ignore `permissionMode` pour les agents d’un plugin : les profils de relecteurs du plugin ne démarrent pas en mode plan. Ils n’ont toujours ni `Write` ni `Edit`, mais gardent Bash, NotebookEdit et les outils MCP de la session : rien d’autre que leurs consignes ne les empêche de modifier le dépôt ou d’appeler un service.
 - Si Grace est déjà configuré à la main, sauvegardez vos réglages puis désactivez seulement cette ancienne entrée Grace avant d’activer le plugin. Sinon, elle peut masquer le plugin ou l’emporter sur lui. Ne supprimez pas vos autres MCP, instructions ou identifiants.
 
 Vérifiez l’accès Git, sans placer de token dans l’URL :
@@ -30,21 +33,21 @@ Choisissez **un seul** bloc, celui de votre client. Les commandes ajoutent le ca
 
 ```sh
 codex plugin marketplace add HoppR-tech/grace-plugin --ref main
-codex plugin add grace@grace-native
+codex plugin add hoppr-grace@grace-native
 ```
 
 ### Claude Code
 
 ```sh
 claude plugin marketplace add HoppR-tech/grace-plugin
-claude plugin install grace@grace-native --scope user
+claude plugin install hoppr-grace@grace-native --scope user
 ```
 
 ### Copilot CLI
 
 ```sh
 copilot plugin marketplace add HoppR-tech/grace-plugin
-copilot plugin install grace@grace-native
+copilot plugin install hoppr-grace@grace-native
 ```
 
 Fermez puis relancez le client. Inspectez les permissions et approuvez les hooks uniquement si leur contenu et leur provenance correspondent au plugin choisi. Une installation réussie ne signifie pas que les hooks sont approuvés ou exécutés.
@@ -55,27 +58,29 @@ Dans un dépôt autorisé, demandez ensuite à l’agent de vérifier le context
 
 ## Mettre à jour
 
+Le plugin s’appelait `grace` avant d’être renommé `hoppr-grace` pour les annuaires publics. Si `grace@grace-native` est encore installé, désinstallez-le (voir « Désinstaller » avec l’ancien nom), actualisez le catalogue puis installez `hoppr-grace@grace-native`.
+
 Une nouvelle version publiée ne remplace pas immédiatement une session ouverte. Il faut actualiser le catalogue **puis** le plugin ; les commandes natives sont utilisées, sans updater Grace.
 
 ### Codex
 
 ```sh
 codex plugin marketplace upgrade grace-native
-codex plugin add grace@grace-native
+codex plugin add hoppr-grace@grace-native
 ```
 
 ### Claude Code
 
 ```sh
 claude plugin marketplace update grace-native
-claude plugin update grace@grace-native --scope user
+claude plugin update hoppr-grace@grace-native --scope user
 ```
 
 ### Copilot CLI
 
 ```sh
 copilot plugin marketplace update grace-native
-copilot plugin update grace@grace-native
+copilot plugin update hoppr-grace@grace-native
 ```
 
 Redémarrez le client, vérifiez la version affichée et refaites le contrôle du projet. Si le contenu des hooks change, leur approbation doit être renouvelée. Codex le demande en session interactive ; en mode non interactif (`codex exec`), il ignore sans le signaler un hook non approuvé, et le plugin ne déclare alors plus le dépôt. Une erreur de mise à jour ne doit pas être assimilée au maintien garanti d’un plugin actif ; vérifiez l’inventaire du client avant de reprendre.
@@ -99,15 +104,15 @@ Tout échec interdit d’utiliser ce paquet. Ne régénérez pas les sommes pour
 Quittez le client avant le retrait. Choisissez le bloc correspondant :
 
 ```sh
-codex plugin remove grace@grace-native
+codex plugin remove hoppr-grace@grace-native
 ```
 
 ```sh
-claude plugin uninstall grace@grace-native --scope user
+claude plugin uninstall hoppr-grace@grace-native --scope user
 ```
 
 ```sh
-copilot plugin uninstall grace@grace-native
+copilot plugin uninstall hoppr-grace@grace-native
 ```
 
 Relancez le client et vérifiez que le plugin, ses hooks et son MCP ne sont plus actifs. Une désinstallation ne constitue pas une preuve de révocation OAuth : utilisez séparément les commandes de déconnexion natives si nécessaire.
@@ -119,19 +124,19 @@ Pour revenir à une version antérieure, utilisez uniquement un tag dont les not
 ```sh
 codex plugin marketplace remove grace-native
 codex plugin marketplace add HoppR-tech/grace-plugin --ref TAG
-codex plugin add grace@grace-native
+codex plugin add hoppr-grace@grace-native
 ```
 
 ```sh
 claude plugin marketplace remove grace-native
 claude plugin marketplace add "HoppR-tech/grace-plugin#TAG"
-claude plugin install grace@grace-native --scope user
+claude plugin install hoppr-grace@grace-native --scope user
 ```
 
 ```sh
 copilot plugin marketplace remove grace-native
 copilot plugin marketplace add "HoppR-tech/grace-plugin#TAG"
-copilot plugin install grace@grace-native
+copilot plugin install hoppr-grace@grace-native
 ```
 
 Ne changez ni les fichiers générés ni le tag publié pour fabriquer un retour arrière.

@@ -13,7 +13,7 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "^mcp__plugin_grace_grace__grace_resolve_context$",
+        "matcher": "^mcp__plugin_hoppr-grace_grace__grace_resolve_context$",
         "hooks": [
           {
             "type": "command",

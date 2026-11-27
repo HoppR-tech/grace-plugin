@@ -3,12 +3,12 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-26T14:25:36.151Z",
+    "timestamp": "2026-11-27T10:11:04.114Z",
     "component": {
       "type": "application",
       "bom-ref": "grace-context",
       "name": "grace-context",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12"
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64"
     }
   },
   "components": [
@@ -30,11 +30,11 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-arm64",
       "name": "grace-context-darwin-arm64",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd"
+          "content": "a354b7573488f6114b11e266b65eacf02103105827b053471d6a6251594b84af"
         }
       ],
       "properties": [
@@ -48,11 +48,11 @@
       "type": "application",
       "bom-ref": "grace-context-darwin-x64",
       "name": "grace-context-darwin-x64",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d"
+          "content": "a944345692e4fe5b629504e1e21eab7ac73d208c4d662783fdc33c66a59af224"
         }
       ],
       "properties": [
@@ -66,11 +66,11 @@
       "type": "application",
       "bom-ref": "grace-context-linux-x64",
       "name": "grace-context-linux-x64",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab"
+          "content": "7c48b2e5e62a537428493b88c15bf206c986e4afd0ff719996edf679b759435f"
         }
       ],
       "properties": [
@@ -84,11 +84,11 @@
       "type": "application",
       "bom-ref": "grace-context-linux-arm64",
       "name": "grace-context-linux-arm64",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3"
+          "content": "0cb5333a74b0faef2df68e6a59bca6fef0599a49d32f37da3b7b37e6894b083b"
         }
       ],
       "properties": [
@@ -102,17 +102,395 @@
       "type": "application",
       "bom-ref": "grace-context-win32-x64",
       "name": "grace-context.exe",
-      "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+      "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e"
+          "content": "2935e3e011f88d625a6ce60eda5e423b4fff51db837f2155fa319a3cdf046d14"
         }
       ],
       "properties": [
         {
           "name": "grace:target",
           "value": "win32-x64"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-discover-codebase/SKILL.md",
+      "name": "codex/plugin/skills/grace-discover-codebase/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-effort/SKILL.md",
+      "name": "codex/plugin/skills/grace-effort/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-review/scripts/review-client.py",
+      "name": "codex/plugin/skills/grace-review/scripts/review-client.py",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-review/SKILL.md",
+      "name": "codex/plugin/skills/grace-review/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-codex-skills/grace-update/SKILL.md",
+      "name": "codex/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-high.md",
+      "name": "claude/plugin/agents/grace-review-high.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-low.md",
+      "name": "claude/plugin/agents/grace-review-low.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-agents/grace-review-medium.md",
+      "name": "claude/plugin/agents/grace-review-medium.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-discover-codebase/SKILL.md",
+      "name": "claude/plugin/skills/grace-discover-codebase/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-effort/SKILL.md",
+      "name": "claude/plugin/skills/grace-effort/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-review/scripts/review-client.py",
+      "name": "claude/plugin/skills/grace-review/scripts/review-client.py",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-review/SKILL.md",
+      "name": "claude/plugin/skills/grace-review/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-claude-skills/grace-update/SKILL.md",
+      "name": "claude/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-discover-codebase/SKILL.md",
+      "name": "copilot/plugin/skills/grace-discover-codebase/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-effort/SKILL.md",
+      "name": "copilot/plugin/skills/grace-effort/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-review/scripts/review-client.py",
+      "name": "copilot/plugin/skills/grace-review/scripts/review-client.py",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-review/SKILL.md",
+      "name": "copilot/plugin/skills/grace-review/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "grace-kit-copilot-skills/grace-update/SKILL.md",
+      "name": "copilot/plugin/skills/grace-update/SKILL.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173"
+        }
+      ],
+      "properties": [
+        {
+          "name": "grace:kit-source",
+          "value": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli"
+        },
+        {
+          "name": "grace:kit-bundle",
+          "value": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58"
         }
       ]
     }
@@ -162,7 +540,7 @@
   "properties": [
     {
       "name": "grace:scope",
-      "value": "GitHub Actions preview build. The hook uses the Go standard library only (no module dependency); OS libraries are outside this inventory."
+      "value": "GitHub Actions preview build. The hook uses the Go standard library only (no module dependency); OS libraries are outside this inventory. The bundled Grace kit (skills, Claude Code review agent profiles and the Python review client run by the user's Python) is listed as files."
     }
   ]
 }

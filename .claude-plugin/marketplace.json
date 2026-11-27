@@ -1,11 +1,13 @@
 {
   "name": "grace-native",
   "owner": {
-    "name": "Grace"
+    "name": "HoppR Tech",
+    "email": "contact-grace@hoppr.tech"
   },
+  "description": "Grace plugin by HoppR.",
   "plugins": [
     {
-      "name": "grace",
+      "name": "hoppr-grace",
       "source": "./claude/plugin"
     }
   ]

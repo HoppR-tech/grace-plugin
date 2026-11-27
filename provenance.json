@@ -2,9 +2,10 @@
   "kind": "github-actions-build-provenance",
   "schemaVersion": 2,
   "localOnly": false,
-  "version": "5.9.0-preview.45838375582.1.g7c3df4279a80.s286f494d7a317e12",
+  "version": "5.9.0-preview.45979517886.1.gb88ba4bcd776.sfd7f6ab970817a64",
   "baseVersion": "5.9.0",
-  "builtAt": "2026-11-26T14:25:36.151Z",
+  "builtAt": "2026-11-27T10:11:04.114Z",
+  "variant": "native",
   "targets": [
     "darwin-arm64",
     "darwin-x64",
@@ -17,12 +18,146 @@
     "claude",
     "copilot"
   ],
+  "kit": {
+    "codex": {
+      "url": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=codex",
+      "harness": "codex",
+      "locale": "en",
+      "bundleDigest": "1a641523a9c1662156ee08dcdb7fc25bfb50be19ee48c3cad23c4bd64937fc8b",
+      "files": [
+        {
+          "path": "skills/grace-discover-codebase/SKILL.md",
+          "source": ".agents/skills/grace-discover-codebase/SKILL.md",
+          "sha256": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7",
+          "bytes": 11993
+        },
+        {
+          "path": "skills/grace-effort/SKILL.md",
+          "source": ".agents/skills/grace-effort/SKILL.md",
+          "sha256": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4",
+          "bytes": 2013
+        },
+        {
+          "path": "skills/grace-review/scripts/review-client.py",
+          "source": ".agents/skills/grace-review/scripts/review-client.py",
+          "sha256": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97",
+          "bytes": 123771
+        },
+        {
+          "path": "skills/grace-review/SKILL.md",
+          "source": ".agents/skills/grace-review/SKILL.md",
+          "sha256": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4",
+          "bytes": 7021
+        },
+        {
+          "path": "skills/grace-update/SKILL.md",
+          "source": ".agents/skills/grace-update/SKILL.md",
+          "sha256": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173",
+          "bytes": 18598
+        }
+      ]
+    },
+    "claude": {
+      "url": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=claude",
+      "harness": "claude",
+      "locale": "en",
+      "bundleDigest": "69ea2a41cd126ad6363de7537b92950ec2a68e348aa3bae387191573442b9dc1",
+      "files": [
+        {
+          "path": "agents/grace-review-high.md",
+          "source": ".claude/agents/grace-review-high.md",
+          "sha256": "71af143850b6b211b302c6100e34d1966412ac44caef35eea57f31c1293a19c3",
+          "bytes": 2408
+        },
+        {
+          "path": "agents/grace-review-low.md",
+          "source": ".claude/agents/grace-review-low.md",
+          "sha256": "3534937d28dcaa06f301295beec26e304185dedd49e93bb3fb08d19b91253813",
+          "bytes": 2407
+        },
+        {
+          "path": "agents/grace-review-medium.md",
+          "source": ".claude/agents/grace-review-medium.md",
+          "sha256": "e3afb71a8738ae34e270a7a838624abec190137867f7f89124bbcd4532b52268",
+          "bytes": 2410
+        },
+        {
+          "path": "skills/grace-discover-codebase/SKILL.md",
+          "source": ".claude/skills/grace-discover-codebase/SKILL.md",
+          "sha256": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7",
+          "bytes": 11993
+        },
+        {
+          "path": "skills/grace-effort/SKILL.md",
+          "source": ".claude/skills/grace-effort/SKILL.md",
+          "sha256": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4",
+          "bytes": 2013
+        },
+        {
+          "path": "skills/grace-review/scripts/review-client.py",
+          "source": ".claude/skills/grace-review/scripts/review-client.py",
+          "sha256": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97",
+          "bytes": 123771
+        },
+        {
+          "path": "skills/grace-review/SKILL.md",
+          "source": ".claude/skills/grace-review/SKILL.md",
+          "sha256": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4",
+          "bytes": 7021
+        },
+        {
+          "path": "skills/grace-update/SKILL.md",
+          "source": ".claude/skills/grace-update/SKILL.md",
+          "sha256": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173",
+          "bytes": 18598
+        }
+      ]
+    },
+    "copilot": {
+      "url": "https://grace.hoppr.tech/api/installation-kit?locale=en&harness=copilot-cli",
+      "harness": "copilot-cli",
+      "locale": "en",
+      "bundleDigest": "3d11f568561444656988d26eaf14793e90319113158a356edbdb9384ff03dc58",
+      "files": [
+        {
+          "path": "skills/grace-discover-codebase/SKILL.md",
+          "source": ".github/skills/grace-discover-codebase/SKILL.md",
+          "sha256": "47c00720da6cbd694f2184828679b4a30c50cb4ed3f113c5f1e7f426634deaa7",
+          "bytes": 11993
+        },
+        {
+          "path": "skills/grace-effort/SKILL.md",
+          "source": ".github/skills/grace-effort/SKILL.md",
+          "sha256": "ed049e4ba0449f7c2052330b52cbe391ccf00361a577b2c9d3589c44bb3107f4",
+          "bytes": 2013
+        },
+        {
+          "path": "skills/grace-review/scripts/review-client.py",
+          "source": ".github/skills/grace-review/scripts/review-client.py",
+          "sha256": "4c1f3b00fd2e5b9da2073574facea01406346ee1fd575e77d07f9194d5242d97",
+          "bytes": 123771
+        },
+        {
+          "path": "skills/grace-review/SKILL.md",
+          "source": ".github/skills/grace-review/SKILL.md",
+          "sha256": "907eb940522c9ea05f473c63d80a8900c814dec32cf0caf01ee6573281053ee4",
+          "bytes": 7021
+        },
+        {
+          "path": "skills/grace-update/SKILL.md",
+          "source": ".github/skills/grace-update/SKILL.md",
+          "sha256": "94413b7ab8a7f821d1d99024bd62b76a8296d1e8a86e57ec06ede84933327173",
+          "bytes": 18598
+        }
+      ]
+    }
+  },
   "source": {
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "commit": "7c3df4279a80dbbf06e72fc7d847bdcacec9885a",
+    "commit": "b88ba4bcd77640782e5d2214babf80ce50a56a37",
     "dirty": false,
-    "digest": "sha256:286f494d7a317e123e953ca4d8d016d0ec1994a578581bdae96b687d62b992c0",
+    "digest": "sha256:fd7f6ab970817a640f70e0a381a149b268646264789e2fe0ee1dc084e6f1424f",
     "inputs": [
       {
         "path": "grace-context/contract_test.go",
@@ -46,8 +181,8 @@
       },
       {
         "path": "grace-context/hook.go",
-        "sha256": "e28db913510d4b5d9e3d3bac65d93c2dc3be020afb3780758d835331e0871cc7",
-        "bytes": 4502
+        "sha256": "9bfdba90f988d5a01ac2d60d797adf6b66f6c1e87e85bf681f9fc5df563f60c4",
+        "bytes": 4508
       },
       {
         "path": "grace-context/main.go",
@@ -83,8 +218,8 @@
       },
       {
         "path": "platform/kit-client/src/context/plugin.mts",
-        "sha256": "bc7a99a47fa57f88266233cef3578ad2d13d49b5d6e46d960bc2cdbfa0939035",
-        "bytes": 10527
+        "sha256": "909df0fc8697d0407560639fc1978e15d778c116f94a617571a2f981053154a8",
+        "bytes": 14534
       },
       {
         "path": "platform/kit-client/src/context/package-output.py",
@@ -92,14 +227,24 @@
         "bytes": 2778
       },
       {
+        "path": "platform/kit-client/src/context/icon.png",
+        "sha256": "3a6d51703daab2cab57c9ac410e5151664c3e9e0fd85c4ef8886241a8a464288",
+        "bytes": 40683
+      },
+      {
+        "path": "platform/kit-client/src/context/skill.md",
+        "sha256": "ecb4728e9b343a4e4a4a370fe3156082c1046605da7198a067979a69e212dd56",
+        "bytes": 3175
+      },
+      {
         "path": "platform/kit-client/scripts/package-native-plugin.mjs",
-        "sha256": "37fc8915ae549a63ac5d500ce5319c94fb8eb3263d9c896e8935488ff50f7691",
-        "bytes": 17216
+        "sha256": "34d7965196e7dfbe8fd871cb8dfb077176817e64cf861506c554c27f42eedaf1",
+        "bytes": 23806
       },
       {
         "path": "platform/kit-client/distribution/README.md",
-        "sha256": "a1eb849d3c88818fe588b4f43e67cebf3867e30bc6d1243eda1e434b643ea301",
-        "bytes": 7884
+        "sha256": "c826fdfca8adc5ad4d3353a6e183ae73f77070431ae1a5fce108d3a59f4b44fe",
+        "bytes": 9560
       },
       {
         "path": "platform/kit-client/distribution/LICENSE.md",
@@ -117,9 +262,9 @@
     "provider": "github-actions",
     "repository": "HoppR-tech/grace-platform",
     "ref": "refs/heads/main",
-    "runId": "45838375582",
+    "runId": "45979517886",
     "runAttempt": "1",
-    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45838375582/attempts/1"
+    "runUrl": "https://github.com/HoppR-tech/grace-platform/actions/runs/45979517886/attempts/1"
   },
   "builder": {
     "compiler": "go",
@@ -140,7 +285,8 @@
         "linux-x64",
         "linux-arm64",
         "win32-x64"
-      ]
+      ],
+      "variant": "native"
     },
     "flags": [
       "-trimpath",
@@ -177,91 +323,91 @@
     {
       "path": "codex/plugin/bin/grace-context-darwin-arm64",
       "target": "darwin-arm64",
-      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "sha256": "a354b7573488f6114b11e266b65eacf02103105827b053471d6a6251594b84af",
       "bytes": 3039634
     },
     {
       "path": "codex/plugin/bin/grace-context-darwin-x64",
       "target": "darwin-x64",
-      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "sha256": "a944345692e4fe5b629504e1e21eab7ac73d208c4d662783fdc33c66a59af224",
       "bytes": 3204400
     },
     {
       "path": "codex/plugin/bin/grace-context-linux-x64",
       "target": "linux-x64",
-      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "sha256": "7c48b2e5e62a537428493b88c15bf206c986e4afd0ff719996edf679b759435f",
       "bytes": 3215484
     },
     {
       "path": "codex/plugin/bin/grace-context-linux-arm64",
       "target": "linux-arm64",
-      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "sha256": "0cb5333a74b0faef2df68e6a59bca6fef0599a49d32f37da3b7b37e6894b083b",
       "bytes": 3080316
     },
     {
       "path": "codex/plugin/bin/grace-context.exe",
       "target": "win32-x64",
-      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "sha256": "2935e3e011f88d625a6ce60eda5e423b4fff51db837f2155fa319a3cdf046d14",
       "bytes": 3339264
     },
     {
       "path": "claude/plugin/bin/grace-context-darwin-arm64",
       "target": "darwin-arm64",
-      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "sha256": "a354b7573488f6114b11e266b65eacf02103105827b053471d6a6251594b84af",
       "bytes": 3039634
     },
     {
       "path": "claude/plugin/bin/grace-context-darwin-x64",
       "target": "darwin-x64",
-      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "sha256": "a944345692e4fe5b629504e1e21eab7ac73d208c4d662783fdc33c66a59af224",
       "bytes": 3204400
     },
     {
       "path": "claude/plugin/bin/grace-context-linux-x64",
       "target": "linux-x64",
-      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "sha256": "7c48b2e5e62a537428493b88c15bf206c986e4afd0ff719996edf679b759435f",
       "bytes": 3215484
     },
     {
       "path": "claude/plugin/bin/grace-context-linux-arm64",
       "target": "linux-arm64",
-      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "sha256": "0cb5333a74b0faef2df68e6a59bca6fef0599a49d32f37da3b7b37e6894b083b",
       "bytes": 3080316
     },
     {
       "path": "claude/plugin/bin/grace-context.exe",
       "target": "win32-x64",
-      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "sha256": "2935e3e011f88d625a6ce60eda5e423b4fff51db837f2155fa319a3cdf046d14",
       "bytes": 3339264
     },
     {
       "path": "copilot/plugin/bin/grace-context-darwin-arm64",
       "target": "darwin-arm64",
-      "sha256": "a189579e2fe71bf0a5b7761404a7598de7012e700eaeeade9c0add3567ec16bd",
+      "sha256": "a354b7573488f6114b11e266b65eacf02103105827b053471d6a6251594b84af",
       "bytes": 3039634
     },
     {
       "path": "copilot/plugin/bin/grace-context-darwin-x64",
       "target": "darwin-x64",
-      "sha256": "bf9c6cf07433d69c19ad6eca905af5af5d5cd8150cba2ba81d17ad52e1740e6d",
+      "sha256": "a944345692e4fe5b629504e1e21eab7ac73d208c4d662783fdc33c66a59af224",
       "bytes": 3204400
     },
     {
       "path": "copilot/plugin/bin/grace-context-linux-x64",
       "target": "linux-x64",
-      "sha256": "34e9e36fac5ee416e270249aa076852a4e85705d2ba4e2880e72a9f89471f1ab",
+      "sha256": "7c48b2e5e62a537428493b88c15bf206c986e4afd0ff719996edf679b759435f",
       "bytes": 3215484
     },
     {
       "path": "copilot/plugin/bin/grace-context-linux-arm64",
       "target": "linux-arm64",
-      "sha256": "244ba9867572f717019d5c5baa5b0846bc40208f7cb824ddb89a79903e2f06d3",
+      "sha256": "0cb5333a74b0faef2df68e6a59bca6fef0599a49d32f37da3b7b37e6894b083b",
       "bytes": 3080316
     },
     {
       "path": "copilot/plugin/bin/grace-context.exe",
       "target": "win32-x64",
-      "sha256": "722cb12c3254db5efaee2fc0146f6e13418701da00775fca62e81b422920117e",
+      "sha256": "2935e3e011f88d625a6ce60eda5e423b4fff51db837f2155fa319a3cdf046d14",
       "bytes": 3339264
     }
   ],
